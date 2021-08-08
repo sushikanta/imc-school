@@ -1,0 +1,71 @@
+.theme-school{
+
+  .error-hint{
+    font-size: .55rem;
+    font-weight: bold;
+    text-align: right;
+    width: 100%;
+    display: block;
+  }
+  .login-wrap {
+    padding: 20px;
+  }
+
+  .btn{
+
+    border-radius: .25rem;
+  }
+  .col-form-label{
+    font-size: 0.84rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    align-content: flex-start;
+
+    .sub-label{
+      font-size: 0.60rem;
+      font-weight: bold;
+    }
+
+    &.align-start{
+      align-items: start;
+      padding-top: 0px;
+    }
+  }
+
+  .loginWrp .form-group .form-control {
+    height: 35px;
+    border-radius: 4px;
+    font-size: 14px;
+    border-color: #f9eccd;
+  }
+
+  input[type=checkbox], input[type=radio] {
+    margin-right: 5px;
+
+  }
+
+  .checkbox{
+    display: flex;
+    label{
+      margin-right: 15px;
+      color: #212529;
+      font-size: 0.84rem;
+
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  textarea.form-control {
+    height: 60px !important;
+  }
+
+}

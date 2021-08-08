@@ -24,6 +24,10 @@ Route::bind('category_slug', function ($value) {
 });*/
 
 Route::get('/', ['as' => 'home', 'uses' => 'HomeController@newHome']);
+Route::get('/register', ['as' => 'register', 'uses' => 'HomeController@register']);
+Route::post('/register', ['as' => 'register', 'uses' => 'HomeController@storeRegistration']);
+
+
 Route::get('/old-home', ['as' => 'home-old', 'uses' => 'HomeController@index']);
 Route::get('contact-us', ['as' => 'contact', 'uses' => 'HomeController@showContactUs']);
 Route::post('/contact-us/submit','ContactusQueriesController@submitQuery')

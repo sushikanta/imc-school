@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Classes\Utility;
 use App\Models\Category;
 use App\Models\Post;
+use App\Models\Registration;
 use App\Models\Videos;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -145,6 +146,35 @@ class HomeController extends Controller
     public function newHome()
     {
         //return view('school.home');
-        return view('school.layouts.default');
+        return view('school.home');
+    }
+
+    public function register()
+    {
+        //return view('school.home');
+        return view('school.register');
+    }
+
+    public function storeRegistration(Request $request) {
+
+        try {
+            $obj = new Registration();
+            $data = Registration::getValidatedData($request);
+            $obj->fill($data);
+            $obj->save();
+            return redirect()->route('register')
+                ->with('success_message','New data Added Successfully.');
+
+
+        } catch (Exception $exception) {
+            $error_messages = ['main_error' => $exception->getMessage()];
+            if(@$exception->validator){
+                $error_messages = $exception->validator;
+            }
+            return back()->withInput()
+                ->withErrors($error_messages);
+        }
+
+
     }
 }
