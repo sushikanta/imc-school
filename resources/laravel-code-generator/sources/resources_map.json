@@ -1,0 +1,78 @@
+[
+    {
+        "model-name": "Country",
+        "resource-file": "countries.json"
+    },
+    {
+        "model-name": "Timezones",
+        "resource-file": "timezones.json"
+    },
+    {
+        "model-name": "BusinessCategories",
+        "resource-file": "business_categories.json"
+    },
+    {
+        "model-name": "oles",
+        "resource-file": "oles.json"
+    },
+    {
+        "model-name": "JobCategories",
+        "resource-file": "job_categories.json"
+    },
+    {
+        "model-name": "JobTitles",
+        "resource-file": "job_titles.json"
+    },
+    {
+        "model-name": "JobCategoryTitles",
+        "resource-file": "job_category_titles.json"
+    },
+    {
+        "model-name": "Roles",
+        "resource-file": "roles.json"
+    },
+    {
+        "model-name": "FaqCategory",
+        "resource-file": "faq_categories.json"
+    },
+    {
+        "model-name": "Faq",
+        "resource-file": "faqs.json"
+    },
+    {
+        "model-name": "FaqRole",
+        "resource-file": "faq_roles.json"
+    },
+    {
+        "model-name": "SysSettings",
+        "resource-file": "sys_settings.json"
+    },
+    {
+        "model-name": "Skills",
+        "resource-file": "skills.json"
+    },
+    {
+        "model-name": "RniCategories",
+        "resource-file": "rni_categories.json"
+    },
+    {
+        "model-name": "RniPosts",
+        "resource-file": "rni_posts.json"
+    },
+    {
+        "model-name": "Categories",
+        "resource-file": "categories.json"
+    },
+    {
+        "model-name": "Posts",
+        "resource-file": "posts.json"
+    },
+    {
+        "model-name": "ContactusQueries",
+        "resource-file": "contactus_queries.json"
+    },
+    {
+        "model-name": "Videos",
+        "resource-file": "videos.json"
+    }
+]
