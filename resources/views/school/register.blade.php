@@ -129,7 +129,7 @@
                             <div class="form-group row">
                                 <label for="mother" class="text-right col-sm-3 col-form-label {{ $errors->has('mother_name') ? 'text-danger' : '' }}">Mother's name:</label>
                                 <div class="col-sm-3">
-                                    <input name="mother" type="text" class="form-control {{ $errors->has('mother_name') ? 'is-invalid' : '' }}" id="mother" value="{{ old('mother_name') }}">
+                                    <input name="mother_name" type="text" class="form-control {{ $errors->has('mother_name') ? 'is-invalid' : '' }}" id="mother" value="{{ old('mother_name') }}">
                                     {!! $errors->first('mother_name', '<small  class="text-danger error-hint">:message</small>') !!}
                                 </div>
 
