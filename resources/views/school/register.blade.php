@@ -17,6 +17,17 @@
             <h4 class="text-center">
                 Registration form for Class XI - Science/Arts<br> for the academic session 2021-22
             </h4>
+            @if(Session::has('success_message'))
+                <div class="row">
+                    <div class="col-sm-8 offset-2 text-center">
+                        <div class="alert alert-success" role="alert">
+                            {!! session('success_message') !!}
+                            </div>
+                    </div>
+                </div>
+              @endif
+
+
             <!-- Register Start -->
             <div class="login-wrap ">
                 <div class="contact-info login_box">

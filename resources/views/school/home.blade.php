@@ -10,7 +10,7 @@
                     <div class="caption lfb large-title tp-resizeme slidertext3" data-x="center" data-y="200" data-speed="600" data-start="2200">
                         Application open for Admission to Class XI - SCIENCE/ARTS for the academic session 2021-2022.
                     </div>
-                    <div class="caption lfb large-title tp-resizeme slidertext4" data-x="330" data-y="300" data-speed="600" data-start="2800"> <a href="#"><i class="fas fa-edit"></i> Register Today</a> </div>
+                    <div class="caption lfb large-title tp-resizeme slidertext4" data-x="330" data-y="300" data-speed="600" data-start="2800"> <a href="{{route('register')}}"><i class="fas fa-edit"></i> Register Today</a> </div>
                     <div class="caption lfb large-title tp-resizeme slidertext4 slidertext5" data-x="610" data-y="300" data-speed="600" data-start="3400"> <a href="#"><i class="far fa-calendar-alt"></i> Submit a query</a> </div>
                 </li>
 
@@ -23,7 +23,7 @@
                         We employ several innovative teaching techniques that impart knowledge and <br/>
                         instill strong values into the child to become responsible future citizens of the world.
                     </div>
-                    <div class="caption lfb large-title tp-resizeme slidertext4" data-x="330" data-y="350" data-speed="600" data-start="2800"> <a href="#"><i class="fas fa-edit"></i> Enroll Today</a> </div>
+                    <div class="caption lfb large-title tp-resizeme slidertext4" data-x="330" data-y="350" data-speed="600" data-start="2800"> <a href="{{route('register')}}"><i class="fas fa-edit"></i> Enroll Today</a> </div>
                     <div class="caption lfb large-title tp-resizeme slidertext4 slidertext5" data-x="610" data-y="350" data-speed="600" data-start="3400"> <a href="#"><i class="far fa-calendar-alt"></i> Schedule a Tour</a> </div>
                 </li>
             </ul>

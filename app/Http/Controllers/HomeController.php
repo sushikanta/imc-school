@@ -163,7 +163,7 @@ class HomeController extends Controller
             $obj->fill($data);
             $obj->save();
             return redirect()->route('register')
-                ->with('success_message','New data Added Successfully.');
+                ->with('success_message',' Registation submitted successfully! We will get back to you soon. Thank you.');
 
 
         } catch (Exception $exception) {
