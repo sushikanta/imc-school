@@ -52,6 +52,8 @@ class Registration extends Model
             'contact_no' => 'string|min:10|max:15',
             'whatsapp_no' => 'string|min:10|max:15',
             'hslc_result' => 'required|min:1',
+            'last_school' => 'required|min:1',
+
             'img_src' => ['file', 'nullable'],
             'father_name' => ['required'],
             'father_occupation' =>['required'],

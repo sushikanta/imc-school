@@ -71,11 +71,11 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="aadhaar" class="text-right col-sm-3 col-form-label  {{ $errors->has('aadhaar') ? 'text-danger' : '' }}">Aadhaar No:
+                                <label for="aadhar" class="text-right col-sm-3 col-form-label  {{ $errors->has('aadhar') ? 'text-danger' : '' }}">Aadhaar No:
                                     <span class="sub-label"> (enclose copy of Aadhaar Card)</span>
                                     </label>
                                 <div class="col-sm-8">
-                                    <input name="aadhaar" type="text" class="form-control {{ $errors->has('aadhaar') ? 'is-invalid' : '' }}" id="aadhaar" value="{{ old('aadhaar') }}">
+                                    <input name="aadhar" type="text" class="form-control {{ $errors->has('aadhaar') ? 'is-invalid' : '' }}" id="aadhar" value="{{ old('aadhar') }}">
                                     {!! $errors->first('aadhaar', '<small  class="text-danger error-hint">:message</small>') !!}
                                 </div>
                             </div>
