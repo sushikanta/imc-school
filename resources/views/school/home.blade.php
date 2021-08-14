@@ -106,7 +106,7 @@
             <p>
                 “Teaching children the behavior expected of them is a daily process.” Good manners and etiquette are key to a child’s social success. Our continuous etiquette training program ensures making the day to day etiquette a part of our girls’ personality. From teaching them basic courtesies to dining etiquette, from social networking etiquette to how etiquette varies in different parts of the world ‘we focus on everything to ensure bringing in the social confidence that will set them up on road to success.
             </p>
-            <div class="readmore"><a href="#">Contact Us</a></div>
+            <div class="readmore"><a href="{{route("contact")}}">Contact Us</a></div>
         </div>
     </div>
     <!-- Choice End -->

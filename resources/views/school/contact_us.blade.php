@@ -94,28 +94,28 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="form-group">
-                                                <input type="text" name="name" class="form-control" placeholder="Enter Name">
+                                                <input type="text" required name="name" class="form-control" placeholder="Enter Name">
                                             </div>
                                         </div>
 
                                         <div class="col-lg-6">
                                             <div class="form-group">
-                                                <input type="email" name="email" class="form-control" placeholder="Email Address">
+                                                <input type="email" required name="email" class="form-control" placeholder="Email Address">
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="form-group">
-                                                <input type="text" name="phone" class="form-control" placeholder="Phone">
+                                                <input type="text" required name="phone" class="form-control" placeholder="Phone">
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="form-group">
-                                                <input name="subject" class="form-control required" type="text" placeholder="Enter Subject">
+                                                <input name="subject" required class="form-control required" type="text" placeholder="Enter Subject">
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="form-group">
-                                                <textarea name="details"  class="form-control" placeholder="Message"></textarea>
+                                                <textarea name="details" required class="form-control" placeholder="Message"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
