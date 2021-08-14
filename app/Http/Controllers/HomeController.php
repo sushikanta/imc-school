@@ -140,7 +140,13 @@ class HomeController extends Controller
     public function showContactUs()
     {
        // return view('frontend.contact_us');
-        return view('site-pharma.contactus');
+        return view('school.contact_us');
+    }
+
+    public function showAboutUs()
+    {
+       // return view('frontend.contact_us');
+        return view('school.about_us');
     }
 
     public function newHome()
@@ -156,6 +162,32 @@ class HomeController extends Controller
     }
 
     public function storeRegistration(Request $request) {
+
+
+        $str_Rand = date("YmdHis")."_".str_random(3);
+        if ($file = $request->file('photo-file')){
+            $file_name = $str_Rand."_photo_".$request->file('photo-file')->getClientOriginalName();
+            $file->move('uploads/registrations',$file_name);
+            $request['file_photo_path'] = $file_name;
+        }
+        if ($file = $request->file('aadhar-file')){
+            $file_name = $str_Rand."_aadhar_".$request->file('aadhar-file')->getClientOriginalName();
+            $file->move('uploads/registrations',$file_name);
+            $request['file_aadhaar_path'] = $file_name;
+        }
+
+        if ($file = $request->file('marksheet-file')){
+            $file_name = $str_Rand."_marksheet_".$request->file('marksheet-file')->getClientOriginalName();
+            $file->move('uploads/registrations',$file_name);
+            $request['file_hslc_marksheet_path'] = $file_name;
+        }
+
+        if ($file = $request->file('admitcard-file')){
+            $file_name = $str_Rand."_admitcard_".$request->file('admitcard-file')->getClientOriginalName();
+            $file->move('uploads/registrations',$file_name);
+            $request['file_hslc_admitcard_path'] = $file_name;
+        }
+
 
         try {
             $obj = new Registration();

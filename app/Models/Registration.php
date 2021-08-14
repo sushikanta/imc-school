@@ -34,6 +34,8 @@ class Registration extends Model
         'file_hslc_admitcard_path',
         'file_hslc_marksheet_path',
         'file_aadhaar_path',
+        'stream',
+        'selected_subject'
     ];
 
 
@@ -41,8 +43,6 @@ class Registration extends Model
     {
         $id = $request->id;
         $rules = [
-
-
             'email' => ['required'],
             'full_name' => ['required'],
             'dob' => ['required'],
@@ -54,7 +54,6 @@ class Registration extends Model
             'hslc_result' => 'required|min:1',
             'last_school' => 'required|min:1',
 
-            'img_src' => ['file', 'nullable'],
             'father_name' => ['required'],
             'father_occupation' =>['required'],
             'mother_name' => ['required'],
@@ -65,10 +64,19 @@ class Registration extends Model
             'district' => ['required'],
             'state' =>['required'],
             'pin' =>['required'],
+            'file_photo_path' =>['required'],
+            'file_hslc_admitcard_path' =>['required'],
+            'file_hslc_marksheet_path' =>['required'],
+            'file_aadhaar_path' =>['required'],
+            'stream' => 'nullable',
+            'selected_subject' => 'nullable'
 
         ];
         $messages = [
-            'slug.unique' => 'The slug has already been taken for another post. Please use another slug/keyword'
+            'file_photo_path.required' => 'Please select a photo.',
+            'file_aadhaar_path.required' => 'Please select Aadhar file.',
+            'file_hslc_admitcard_path.required' => 'Please select HSLC admit card.',
+            'file_hslc_marksheet_path.required' => 'Please select HSLC mark sheet.'
         ];
         $data = $request->validate($rules, $messages);
         if ($request->has('custom_delete_img_src')) {

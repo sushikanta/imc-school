@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="Bootstrap Admin App + jQuery">
     <meta name="keywords" content="app, responsive, jquery, bootstrap, dashboard, admin">
-    <title>Realtyninfra - Admin</title>
+    <title>Integrated Manipur Academy - Admin</title>
     <!-- =============== VENDOR STYLES ===============-->
     <!-- FONT AWESOME-->
     <link rel="stylesheet" href="{{ url('theme-angle/vendor/font-awesome/css/font-awesome.css') }}">
@@ -26,9 +26,7 @@
         <!-- START card-->
         <div class="card card-flat login-card">
             <div class="card-header text-center bg-dark">
-                <a href="javascript:void(0)">
-                    <img height="30px" class="block-center rounded" src="{{asset('frontend') }}/images/new/logo_3_white.png" alt="Image">
-                </a>
+                <h3 style="margin: 0; color: white;">IMA Admin Login</h3>
             </div>
             <div class="card-body">
                 <p class="text-center py-2">SIGN IN TO CONTINUE.</p>
@@ -63,11 +61,11 @@
                         </div>
                     </div>
                     <div class="clearfix">
-                        <div class="checkbox c-checkbox float-left mt-0">
+                       {{-- <div class="checkbox c-checkbox float-left mt-0">
                             <label>
                                 <input type="checkbox" value="" name="remember">
                                 <span class="fa fa-check"></span>Remember Me</label>
-                        </div>
+                        </div>--}}
                         {{--<div class="float-right"><a class="text-muted" href="recover.html">Forgot your password?</a>
                         </div>--}}
                     </div>
@@ -77,7 +75,7 @@
         </div>
         <!-- END card-->
         <div class="p-3 text-center" style="color: white">
-            <span class="mr-2">&copy;</span><span>{{ date('Y') }}</span><span class="mr-2"> -</span><span>RealtynInfra.com</span>
+            <span class="mr-2">&copy;</span><span>{{ date('Y') }}</span><span class="mr-2"> -</span><span>IntegratedManipurAcademy.com</span>
             <br>
         </div>
     </div>

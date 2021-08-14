@@ -74,5 +74,9 @@
     {
         "model-name": "Videos",
         "resource-file": "videos.json"
+    },
+    {
+        "model-name": "Registrations",
+        "resource-file": "registrations.json"
     }
 ]

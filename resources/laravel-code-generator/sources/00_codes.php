@@ -32,4 +32,8 @@ php artisan create:resources Post --force --without-timestamps --template-name=a
 
 php artisan resource-file:create ContactusQueries --fields="id,name,email,phone,subject,name:details;html-type:textarea,created_at,updated_at" --force
 php artisan create:resources ContactusQuery --force --template-name=ajaxified
+
+
+php artisan resource-file:create Registrations --fields="id,email,full_name,dob,gender,category,aadhar,contact_no,whatsapp_no,last_school,hslc_result,father_name,father_occupation,mother_name,mother_occupation,present_address,permanent_address,village_town,district,state,pin,file_photo_path,file_hslc_admitcard_path,file_hslc_marksheet_path,file_aadhaar_path,stream,selected_subject,created_at,updated_at" --force
+php artisan create:resources Registrations --force --template-name=ajaxified
  */

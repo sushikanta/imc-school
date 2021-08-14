@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Post;
+use App\Models\Registration;
 use App\Rules\ValidateAdminExist;
 use App\Rules\ValidateEmailExist;
 use App\User;
@@ -40,10 +41,9 @@ class AdminController extends Controller {
 
     public function showDashboard()
     {
-        Post::all();
-        $categoryCount = Category::count();
-        $postCount = Post::count();
-        return view('admin.dashboard', compact('categoryCount', 'postCount'));
+
+        $registrationCount = Registration::count();
+        return view('admin.dashboard', compact('registrationCount'));
        // return view('layouts.app');
     }
 

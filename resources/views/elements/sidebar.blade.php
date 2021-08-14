@@ -34,24 +34,13 @@
                 </a>
 
             </li>
-            <li class="@if(Request::path() === 'admin/categories') active @endif">
-                <a href="{{url('admin/categories')}}" title="Categories">
-                    <em class="fa fa-folder-open"></em>
-                    <span >Categories</span>
+            <li class="@if(Request::path() === 'admin/registrations') active @endif">
+                <a href="{{url('admin/registrations')}}" title="Registrations">
+                    <em class="fa fa-users"></em>
+                    <span >Registrations</span>
                 </a>
             </li>
-            <li class="@if(Request::path() === 'admin/posts') active @endif">
-                <a href="{{url('admin/posts')}}" title="Posts">
-                    <em class="fa fa-newspaper-o"></em>
-                    <span >Posts</span>
-                </a>
-            </li>
-            <li class="@if(Request::path() === 'admin/videos') active @endif">
-                <a href="{{route('videos.videos.index')}}" title="Videos">
-                    <em class="fa fa-newspaper-o"></em>
-                    <span >Videos</span>
-                </a>
-            </li>
+
             <li class="@if(Request::path() === 'admin/contactus_queries') active @endif">
                 <a href="{{route('contactus_queries.contactus_query.index')}}" title="Posts">
                     <em class="fa fa-newspaper-o"></em>

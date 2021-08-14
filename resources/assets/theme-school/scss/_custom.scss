@@ -68,4 +68,70 @@
     height: 60px !important;
   }
 
+
+  .file {
+    visibility: hidden;
+    position: absolute;
+  }
+
+.img-wrapper{
+  border: 1px solid #c5c1c1;
+  padding: 1px;
+  .img-container{
+    height: 163px;
+    width: 153px;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}
+
+  .file-lbl{
+    margin: 0;
+    font-size: 10px;
+    text-align: center;
+    color: #034d9c;
+    margin-left: 10px;
+  }
+  .btn-small{
+      height: 27px;
+    font-size: 12px;
+    padding: 0px 8px;
+    background: #007bff;
+    text-transform: none;
+  }
+
+  .required-tag{
+    color: red;
+    font-weight: bold;
+    position: relative;
+    top: -2px;
+    font-size: 0.75rem;
+  }
+
+  .required-tag-line{
+    text-align: right;
+    font-size: 10px;
+    position: relative;
+    top: -17px;
+    color: #e46900;
+    font-weight: bold;
+    font-style: italic;
+  }
+.subject-list{
+  font-size: 0.75rem;
+  margin-left: 2rem!important;
+}
+
+  .subject-options{
+    .align-start{
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+
+
+
+  .edu_icon {
+    width: 149px;
+  }
 }

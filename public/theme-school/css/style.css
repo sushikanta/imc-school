@@ -1906,8 +1906,8 @@ button:focus {
   padding: 16px 40px;
 }
 .form-group .btn:hover {
-  background: #e20c0c;
-  color: #fff;
+ /* background: #e20c0c;
+  color: #fff;*/
 }
 .contact-wrap .form-control {
   height: 50px;

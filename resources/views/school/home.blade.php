@@ -11,7 +11,7 @@
                         Application open for Admission to Class XI - SCIENCE/ARTS for the academic session 2021-2022.
                     </div>
                     <div class="caption lfb large-title tp-resizeme slidertext4" data-x="330" data-y="300" data-speed="600" data-start="2800"> <a href="{{route('register')}}"><i class="fas fa-edit"></i> Register Today</a> </div>
-                    <div class="caption lfb large-title tp-resizeme slidertext4 slidertext5" data-x="610" data-y="300" data-speed="600" data-start="3400"> <a href="#"><i class="far fa-calendar-alt"></i> Submit a query</a> </div>
+                    <div class="caption lfb large-title tp-resizeme slidertext4 slidertext5" data-x="610" data-y="300" data-speed="600" data-start="3400"> <a href="{{route('contact')}}"><i class="far fa-calendar-alt"></i> Submit a query</a> </div>
                 </li>
 
                 <li data-slotamount="7" data-transition="slotzoom-horizontal" data-masterspeed="1000" data-saveperformance="on"> <img alt="" src="{{ asset('theme-school') }}/images/dummy.png" data-lazyload="{{ asset('theme-school') }}/images/slider.jpg">
@@ -24,7 +24,7 @@
                         instill strong values into the child to become responsible future citizens of the world.
                     </div>
                     <div class="caption lfb large-title tp-resizeme slidertext4" data-x="330" data-y="350" data-speed="600" data-start="2800"> <a href="{{route('register')}}"><i class="fas fa-edit"></i> Enroll Today</a> </div>
-                    <div class="caption lfb large-title tp-resizeme slidertext4 slidertext5" data-x="610" data-y="350" data-speed="600" data-start="3400"> <a href="#"><i class="far fa-calendar-alt"></i> Schedule a Tour</a> </div>
+                    <div class="caption lfb large-title tp-resizeme slidertext4 slidertext5" data-x="610" data-y="350" data-speed="600" data-start="3400"> <a href="{{route('contact')}}"><i class="far fa-calendar-alt"></i> Contact Us</a> </div>
                 </li>
             </ul>
         </div>
@@ -213,7 +213,7 @@
 
 
     <!--Newsletter Start-->
-    <div class="newsletter-wrap ">
+    {{--<div class="newsletter-wrap ">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -235,7 +235,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>--}}
     <!--Newsletter End-->
 
 @endsection

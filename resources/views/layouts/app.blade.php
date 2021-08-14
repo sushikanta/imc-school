@@ -8,7 +8,7 @@
     <meta name="keywords" content="Realtyninfra Admin">
     <link rel="icon" type="image/x-icon" href="{{ asset('frontend') }}/images/new/favicon.png">
 
-    <title>Realtyninfra - Admin</title>
+    <title>IMA - Admin</title>
     <!-- =============== VENDOR STYLES ===============-->
     <!-- FONT AWESOME-->
     <link rel="stylesheet" href="{{ asset('theme-angle') }}/vendor/font-awesome/css/font-awesome.css">
@@ -41,10 +41,10 @@
             <div class="navbar-header">
                 <a class="navbar-brand" href="{{ route('admin.dashboard') }}">
                     <div class="brand-logo">
-                        <img height="30px" class="img-fluid" src="{{asset('frontend') }}/images/new/logo_3_white.png" alt="Realtyninfra Logo">
+                        <h3 style="color: white">IMA  Admin</h3>
                     </div>
                     <div class="brand-logo-collapsed">
-                        <img class="img-fluid" src="{{asset('frontend/images/new/logo_single_white.png')}}" alt="Realtyninfra Logo">
+                        <h3 style="color: white">IMA</h3>
                     </div>
                 </a>
             </div>
@@ -539,7 +539,7 @@
     </section>
     <!-- Page footer-->
     <footer class="footer-container">
-        <span>&copy; {{date('Y')}} - Realtyninfra.com</span>
+        <span style="color: white;">&copy; {{date('Y')}} - IntegratedManipurAcademy.com</span>
     </footer>
 </div>
 

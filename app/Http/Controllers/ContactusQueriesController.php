@@ -72,9 +72,9 @@ class ContactusQueriesController extends Controller
 
             $data = $this->getData($request);
 
-            /*$obj = ContactusQuery::create($data);
+            $obj = ContactusQuery::create($data);
 
-            Mail::to('realtyninfra@gmail.com')
+           /* Mail::to('realtyninfra@gmail.com')
                 ->bcc('skanta.it@gmail.com')
                 ->send(new AdminContactus($obj));*/
 

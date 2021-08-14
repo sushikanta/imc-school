@@ -41,9 +41,9 @@
                             <button class="close-toggler" type="button" data-toggle="offcanvas"> <span><i class="fas fa-times-circle" aria-hidden="true"></i></span> </button>
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item"> <a class="nav-link {!! request()->is('/') ? 'active' : ''  !!}" href="{{route('home')}}">Home {!! request()->is('/') ? '<span class="sr-only">(current)</span></a>' : ''  !!}</a> </li>
-                                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                                <li class="nav-item"><a class="nav-link {!! request()->is('about-us') ? 'active' : ''  !!}" href="{{route('aboutus')}}">About</a></li>
                                 <li class="nav-item"><a class="nav-link {!! request()->is('register') ? 'active' : ''  !!}" href="{{route('register')}}">Registration {!! request()->is('register') ? '<span class="sr-only">(current)</span></a>' : ''  !!}</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                                <li class="nav-item"><a class="nav-link {!! request()->is('contact-us') ? 'active' : ''  !!}" href="{{route('contact')}}">Contact Us</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -52,7 +52,7 @@
             <div class="col-lg-3">
                 <div class="header_info">
                     <div class="search"></div>
-                    <div class="loginwrp"><a href="#">Login/Register</a></div>
+                    <div class="loginwrp"><a href="{{route('admin.login')}}">Admin Login</a></div>
                 </div>
             </div>
         </div>
@@ -79,11 +79,11 @@
             <div class="col-lg-2 col-md-3">
                 <h3>Quick links</h3>
                 <ul class="footer-links">
-                    <li> <a href="index.html">Home</a></li>
-                    <li> <a href="about.html">About</a></li>
-                    <li> <a href="classes.html">Enroll</a></li>
-                    <li> <a href="teachers.html">Teachers</a></li>
-                    <li> <a href="contact.html">Contact Us</a></li>
+                    <li> <a href="{{route('home')}}">Home</a></li>
+                    <li> <a href="{{route('aboutus')}}">About</a></li>
+                    <li> <a href="{{route('register')}}">Enroll</a></li>
+                    {{--<li> <a href="teachers.html">Teachers</a></li>--}}
+                    <li> <a href="{{route('contact')}}">Contact Us</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-4">
@@ -94,7 +94,7 @@
                     <li>Wednesday <span>09:00 - 06:00</span></li>
                     <li>Thursday <span>09:00 - 06:00</span></li>
                     <li>Friday <span>09:00 - 06:00</span></li>
-                    <li>Saturday <span>09:00 - 02:00</span></li>
+                    <li>Saturday <span>09:00 - 06:00</span></li>
                     <li>Sunday <span>Closed</span></li>
                 </ul>
             </div>
@@ -149,5 +149,7 @@
 <!-- general script file -->
 <script src="{{ asset('theme-school') }}/js/owl.carousel.js"></script>
 <script src="{{ asset('theme-school') }}/js/script.js"></script>
+
+@yield('scripts')
 </body>
 </html>

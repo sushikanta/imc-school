@@ -27,8 +27,8 @@ Route::get('/', ['as' => 'home', 'uses' => 'HomeController@newHome']);
 Route::get('/register', ['as' => 'register', 'uses' => 'HomeController@register']);
 Route::post('/register', ['as' => 'register', 'uses' => 'HomeController@storeRegistration']);
 
+Route::get('about-us', ['as' => 'aboutus', 'uses' => 'HomeController@showAboutUs']);
 
-Route::get('/old-home', ['as' => 'home-old', 'uses' => 'HomeController@index']);
 Route::get('contact-us', ['as' => 'contact', 'uses' => 'HomeController@showContactUs']);
 Route::post('/contact-us/submit','ContactusQueriesController@submitQuery')
     ->name('contactus_queries.contactus_query.query');
@@ -354,11 +354,41 @@ Route::group([ 'prefix' => 'admin', 'middleware' => ['admin']], function () {
 
     });
 
+
+
+    Route::group(
+        [
+            'prefix' => 'registrations',
+        ], function () {
+
+        Route::get('/', 'RegistrationsController@index')
+            ->name('registrations.registrations.index');
+
+        Route::get('/create','RegistrationsController@create')
+            ->name('registrations.registrations.create');
+
+        Route::get('/show/{registrations}','RegistrationsController@show')
+            ->name('registrations.registrations.show')
+            ->where('id', '[0-9]+');
+
+        Route::get('/{registrations}/edit','RegistrationsController@edit')
+            ->name('registrations.registrations.edit')
+            ->where('id', '[0-9]+');
+
+        Route::post('/', 'RegistrationsController@store')
+            ->name('registrations.registrations.store');
+
+        Route::put('registrations/{registrations}', 'RegistrationsController@update')
+            ->name('registrations.registrations.update')
+            ->where('id', '[0-9]+');
+
+        Route::delete('/registrations/{registrations}','RegistrationsController@destroy')
+            ->name('registrations.registrations.destroy')
+            ->where('id', '[0-9]+');
+
+    });
+
 });
-
-Route::get('{post_slug}', ['as' => 'post.details.slug', 'uses' => 'HomeController@showSluggifiedPost']);
-
-
 
 
 
